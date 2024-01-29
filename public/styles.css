@@ -552,6 +552,10 @@ video {
   margin-top: 2rem;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .p-4 {
   padding: 1rem;
 }
