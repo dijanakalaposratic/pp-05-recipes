@@ -7,105 +7,103 @@
 		<link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
 		<!-- Title -->
 		<title>Recipes</title>
-
+		<!-- Font Awesome Icons cdn link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Tailwind CSS -->
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 
-	<body class="text-gray-600 font-body">
+	<body class="text-gray-500 font-body">
 		<div class="grid md:grid-cols-3">
 			<!-- content wrapper -->
-			<div class="md:col-span-1">
-				<nav>
-					<div>
-						<h1 class="font-bold uppercase p-4 border-b border-grey-100">
-							<a class="text-sm md:text-xl" href="/">Recipes</a>
+			<div class="md:col-span-1 md:flex md:justify-end">
+				<nav class="text-right">
+					<div class="flex justify-between items-center">
+						<h1 class="font-bold uppercase p-4 border-b border-gray-100">
+							<a class="hover:text-gray-700" href="/">Recipes</a>
 						</h1>
+						<div class="px-4 cursor-pointer md:hidden" id="burger">
+							<i class="fa-solid fa-bars w-6"></i>
+						</div>
 					</div>
-					<ul>
-						<li class="text-gray-700 font-bold">
-							<a href="#">
+					<ul class="text-sm mt-6 hidden md:block" id="menu">
+						<li class="text-gray-700 font-bold py-1">
+							<a class="px-4 flex-end border-r-4 border-primary" href="#">
 								<span>Home</span>
+								<i class="fa-solid fa-house w-5 ml-2"></i>
 							</a>
 						</li>
-						<li>
-							<a href="#">
+						<li class="py-1">
+							<a class="px-4 flex-end border-r-4 border-white" href="#">
 								<span>About</span>
+								<i class="fa-regular fa-circle-question w-5 ml-2"></i>
 							</a>
 						</li>
-						<li>
-							<a href="#">
+						<li class="py-1">
+							<a class="px-4 flex-end border-r-4 border-white" href="#">
 								<span>Contact</span>
+								<i class="fa-regular fa-envelope w-5 ml-2"></i>
 							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<main class="px-16 py-6 bg-grey-100 md:col-span-2">
+			<main class="px-16 py-6 bg-gray-100 md:col-span-2">
 				<div class="flex justify-center md:justify-end">
-					<a class="btn text-primary border-primary md:border-2" href="#">Log in</a>
-					<a class="btn text-primary border-primary md:border-2 ml-2" href="#">Sign up</a>
+					<a class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white" href="#">Log in</a>
+					<a class="btn text-primary border-primary md:border-2 ml-2 hover:bg-primary hover:text-white" href="#">Sign up</a>
 				</div>
 				<header>
 					<h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
 					<h3 class="text-2xl font-semibold">for your taste and soul</h3>
 				</header>
 				<div>
-					<h4 class="font-bold mt-12 pb-2 border-b border-grey-200">Latest Recipes</h4>
+					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 					<div class="mt-8 grid lg:grid-cols-3 gap-10">
 						<!-- cards go here -->
-						<div class="card">
+						<div class="card hover:shadow-lg">
 							<img class="w-full h-32 sm:h-48 object-cover" src="./images/recipe1.jpg" alt="Berries & Cream Instant Oatmeal" />
 							<div class="m-4">
 								<span class="font-bold">Berries & Cream Instant Oatmeal</span>
-								<span class="block text-grey-500 text-sm">Recipe by PickUpLimes</span>
+								<span class="block text-gray-500 text-sm">Recipe by PickUpLimes</span>
 							</div>
 							<div class="badge">
-								<svg class="w-3 h3 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-									<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
-								</svg>
+								<i class="fa-regular fa-clock inline-block w-5"></i>
 								<span>8 mins</span>
 							</div>
 						</div>
 
-						<div class="card">
+						<div class="card hover:shadow-lg">
 							<img class="w-full h-32 sm:h-48 object-cover" src="./images/recipe2.jpg" alt="Gado Gado on Toast" />
 							<div class="m-4">
 								<span class="font-bold">Gado Gado on Toast</span>
-								<span class="block text-grey-500 text-sm">Recipe by PickUpLimes</span>
+								<span class="block text-gray-500 text-sm">Recipe by PickUpLimes</span>
 							</div>
 							<div class="badge">
-								<svg class="w-3 h3 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-									<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
-								</svg>
+								<i class="fa-regular fa-clock inline-block w-5"></i>
 								<span>10 mins</span>
 							</div>
 						</div>
 
-						<div class="card">
+						<div class="card hover:shadow-lg">
 							<img class="w-full h-32 sm:h-48 object-cover" src="./images/recipe3.jpg" alt="Vegan Kaiserschmarrn with Plum Compote" />
 							<div class="m-4">
 								<span class="font-bold">Vegan Kaiserschmarrn with Plum Compote</span>
-								<span class="block text-grey-500 text-sm">Recipe by PickUpLimes</span>
+								<span class="block text-gray-500 text-sm">Recipe by PickUpLimes</span>
 							</div>
 							<div class="badge">
-								<svg class="w-3 h3 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-									<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
-								</svg>
+								<i class="fa-regular fa-clock inline-block w-5"></i>
 								<span>30 mins</span>
 							</div>
 						</div>
 					</div>
-					<h4 class="font-bold mt-12 pb-2 border-b border-grey-200">Most Popular</h4>
+					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
 					<div class="mt-8">
 						<!-- cards go here -->
 					</div>
 				</div>
 				<div class="flex justify-center">
-					<div class="btn bg-secondary-100 text-secondary-200">Load more</div>
+					<div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load more</div>
 				</div>
 			</main>
 		</div>
