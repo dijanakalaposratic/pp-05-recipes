@@ -10,9 +10,11 @@
 		<!-- Tailwind CSS -->
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
+
 	<body class="text-gray-600 font-body">
-		<div>
-			<div>
+		<div class="grid md:grid-cols-3">
+			<!-- content wrapper -->
+			<div class="md:col-span-1">
 				<nav>
 					<div>
 						<h1 class="font-bold uppercase p-4 border-b border-grey-100">
@@ -38,7 +40,7 @@
 					</ul>
 				</nav>
 			</div>
-			<main class="px-16 py-6 bg-grey-100">
+			<main class="px-16 py-6 bg-grey-100 md:col-span-2">
 				<div class="flex justify-center md:justify-end">
 					<a class="text-primary" href="#">Log in</a>
 					<a class="text-primary ml-2" href="#">Sign up</a>
@@ -49,7 +51,7 @@
 				</header>
 				<div>
 					<h4 class="font-bold mt-12 pb-2 border-b border-grey-200">Latest Recipes</h4>
-					<div class="mt-8">
+					<div class="mt-8 grid lg:grid-cols-3 gap-10">
 						<!-- cards go here -->
 						<div class="card">
 							<img class="w-full h-32 sm:h-48 object-cover" src="./images/recipe1.jpg" alt="Berries & Cream Instant Oatmeal" />
